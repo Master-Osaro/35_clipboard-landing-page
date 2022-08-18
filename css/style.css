@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, 
+input{
+    font-family: inherit;
+}
+
+:root{
+    /* ### Primary */
+
+    --strong-cyan-lighter: hsl(171, 64%, 58%);
+    --strong-cyan: hsl(171, 66%, 44%);
+    --strong-cyan-darker: hsl(170, 72%, 37%);
+    --strong-cyan-transparent: hsla(171, 66%, 44%, 0.25);
+    --light-blue-lighter: hsl(233, 100%, 77%);
+    --light-blue: hsl(233, 100%, 69%);
+    --light-blue-darker: hsl(233, 58%, 57%);
+    --light-blue-transparent: hsla(233, 100%, 69%, 0.25);
+
+    /* ### Neutral */
+
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --light-gray: hsl(0, 0%, 97%);
+    --black: hsl(0, 0%, 16%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --font-bai: 'Bai Jamjuree', sans-serif;
+    --font-size: 18px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-bai);
+    position: relative;
+    font-size: var(--font-size);
+    background-image: url(../images/bg-header-desktop.png);
+    background-size: contain;
+    background-position: top 0;
+    background-repeat: no-repeat;
+}
+
+/* =========== Button ============= */
+.button{
+    font-size: 1.15rem;
+    padding: 0.8rem 2.3rem;
+    border-radius: 2rem;
+    border: none;
+    color: var(--white);
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button--primary{
+    background: var(--strong-cyan);
+    box-shadow: 2px 4px 15px 2px var(--strong-cyan-transparent);
+    border-bottom: 2px solid var(--strong-cyan-darker);
+}
+
+.button--secondary{
+    background: var(--light-blue);
+    box-shadow: 2px 4px 15px 2px var(--light-blue-transparent);
+    border-bottom: 2px solid var(--light-blue-darker);
+}
+.button--primary:hover{
+    background: var(--strong-cyan-lighter);
+}
+
+.button--secondary:hover{
+    background: var(--light-blue-lighter);
+}
+
+
+
+
+.hero{
+    margin-top: 3rem;
+}
+
+.hero, main,
+.hero__content, 
+.track, .clipboard,
+.workfow, .outro,
+footer .container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero,.track,.outro{
+    gap: 3rem;
+    text-align: center;
+    max-width: 50rem;
+}
+
+
+
+main{
+   margin: 4rem 0;
+   gap: 4rem; 
+   text-align: center;
+}
+
+.track__featurelist{
+    display: flex;
+}
+
+.track__featurelist-img--wrapper{
+
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.track__featurelist-img{
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+}
+
+.image__wrapper--half {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.image__wrapper--half {
+height: 100%;
+}
+
+.track__featurelist-benefits{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    height: 80vh;
+    margin-left: 2rem;
+}
+
+.track__featurelist-img{
+    width: 100%;
+}
+
+.hero__content-title,.track__title, 
+.clipboard__title, 
+.workflow__title,
+.outro__title
+{
+    font-size: 3rem;
+    color: var(--dark-grayish-blue);
+}
+
+.hero__content-text,
+.track__text, 
+.clipboard__text, 
+.workflow__text,
+.outro__text{
+    font-size: 1.3rem;
+    color: var(--grayish-blue);
+}
+
+.track__featurelist-benefit--title,
+.workflow__feature--title,
+.footer__nav-list ul li a{
+    color: var(--dark-grayish-blue);
+}
+
+.track__featurelist-benefit--text,
+.workflow__feature--text
+{
+    color: var(--grayish-blue);
+}
+.track__title, 
+.clipboard__title, 
+.workflow__title,
+.outro__title{
+    margin-bottom: 0.5rem;
+}
+
+.track__text, 
+.clipboard__text, 
+.workflow__text,
+.outro__text{
+    margin-bottom: 2.5rem;
+}
+
+.clipboard__image--wrapper{}
+.clipboard__image{
+    width: 100%;
+}
+
+.clients{
+    display: flex;
+    gap: 0.4rem;
+}
+.workflow,.clients__wrapper{
+    width: 100%;
+}
+
+.clients, .workflow__features{
+    display: grid;
+}
+.clients{   
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+}
+ .workflow__features{
+    grid-template-columns: repeat(auto-fit,minmax(225px, 1fr));
+}
+
+.workflow__features,.clients{
+    max-width: 70rem;
+}
+
+/*============= Footer =============*/
+footer{
+    width: 100%;
+    background:var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    align-items: flex-start;
+    padding: 4rem;
+}
+
+.footer__nav-list ul{
+    list-style: none;
+    text-decoration: none;
+}
+.footer__nav-list ul li{
+    margin-bottom: 1rem;
+}
+.footer__nav-list ul a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.footer__logo img{
+    max-width: 60px;
+}
+
+.footer__socials{
+    display: flex;
+    gap: 1rem
+}
+
+.footer__socials img{
+    cursor: pointer;
+}
+
+.footer__socials-icon--wrapper{
+    position: relative;
+}
+.footer__socials-icon--wrapper:hover::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: hsl(171deg, 66%, 44%);
+    mix-blend-mode: lighten;
+}
+
+@media only screen and (max-width: 772px) {
+    body{
+        display: block;
+        padding: 1rem;
+    }
+
+    .button__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .track__featurelist{
+        flex-direction: column;
+    }
+
+    .image__wrapper--half {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .image__half {
+        height:unset;
+        width: 100%;
+    }
+
+    .track__featurelist-benefits{
+        text-align: center;
+    }
+
+    .clients, .workflow__features{
+        grid-template-columns: 1fr;  
+        gap: 3rem;
+    }
+
+    footer .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer__socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }            
+}
+
+/*to do: Add 3 grids supercharge option, clients and footer*/
