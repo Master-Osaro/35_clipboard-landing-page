@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Demo](https://project-tracking-intro.netlify.app/)
+- Live Site URL: [Live Demo](https://clipboard-landing-page-o.netlify.app/)
 
 ## My process
 
