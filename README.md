@@ -1,6 +1,6 @@
-# Frontend Mentor - Huddle landing page with alternating feature blocks
+# Frontend Mentor - Clipboard landing page
 
-![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -23,12 +23,13 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
+- Create the background shape using code
 
 
 
 ### Links
 
-- Live Site URL: [Live Demo]()
+- Live Site URL: [Live Demo](https://clipboard-landing-page-o.netlify.app/)
 
 ## My process
 
