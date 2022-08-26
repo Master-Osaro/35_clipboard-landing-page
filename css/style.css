@@ -271,6 +271,7 @@ footer .container{
 
 .footer__socials-icon--wrapper{
     position: relative;
+    cursor: pointer;
 }
 .footer__socials-icon--wrapper:hover::after {
     position: absolute;
