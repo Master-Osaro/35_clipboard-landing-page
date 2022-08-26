@@ -282,6 +282,7 @@ footer .container{
     height: 1.5rem;
     background-color: hsl(171deg, 66%, 44%);
     mix-blend-mode: lighten;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 772px) {
