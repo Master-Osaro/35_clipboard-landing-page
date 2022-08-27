@@ -115,6 +115,7 @@ main{
 
 .track__featurelist{
     display: flex;
+    align-items: center;
 }
 
 .track__featurelist-img--wrapper{
@@ -265,13 +266,9 @@ footer .container{
     gap: 1rem
 }
 
-.footer__socials img{
-    cursor: pointer;
-}
 
 .footer__socials-icon--wrapper{
     position: relative;
-    cursor: pointer;
 }
 .footer__socials-icon--wrapper:hover::after {
     position: absolute;
